@@ -2,6 +2,7 @@ import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import streamlit as st
 import seaborn as sb
 import seaborn as sns
 import pickle
@@ -14,6 +15,15 @@ vietnam_disasters = pd.read_csv("disasters_vietnam.csv")
 temp = pd.read_csv("temperature_vietnam.csv")
 gdp = pd.read_csv("gdp_pcap.csv")
 energy = pd.read_csv('energy_per_person.csv')
+
+# STREAMLIT
+with st.sidebar:
+    selected = option_menu(
+      menu_title = "Main Menu",
+      options = ["Global Emissions","Top 10 Countries","Tile Plot","Facet Plot","Scatterplots"],
+      menu_icon = "cast",
+      default_index = 0
+    )
 
 # DATA WRANGLING
 
