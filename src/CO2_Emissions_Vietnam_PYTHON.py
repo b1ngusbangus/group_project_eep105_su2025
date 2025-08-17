@@ -17,7 +17,7 @@ if selected == "Line Plots":
     with lp1:
         image_url1 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/World_CO2.png"
         st.image(image_url1, caption="Global CO2 Emissions Per Person (1800-2019)")
-        st.caption("Wow! The CO2 has risen exponentially since the 20th century... Perhaps this change relates to the Industrial Revolution, which has forever changed the way the world moves around and produces things.")
+        st.caption("CO2 emissions have risen exponentially since the 20th century... Perhaps this change relates to the Industrial Revolution, which has forever changed the way the world moves around and produces things.")
     with lp2:
         image_url2 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Top10_CO2_lineplot.png"
         st.image(image_url2, caption="Top 10 Emissions-producing Countries in 2010 (1900–2014)")
