@@ -30,7 +30,7 @@ if selected == "Tile Plots":
     with tp:
         image_url3 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Top10_CO2_tile.png"
         st.image(image_url3, caption="Top 10 CO₂ Emission-producing Countries\nOrdered by Emissions Produced in 2014")
-        st.caption("ADD DESCRIPTION")
+        st.caption("We see that Germany had very low emission rates at the end of World War II. We also see that the US has consistently had high emission rates since 1900, but the emission rates in China recently surpassed that of the US. The portions of the plot that are white indicate that there is no emission data for that country.")
 
 if selected == "Facet Plots":
     st.header('Facet Plots')
