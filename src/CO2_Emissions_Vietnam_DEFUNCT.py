@@ -16,15 +16,6 @@ temp = pd.read_csv("temperature_vietnam.csv")
 gdp = pd.read_csv("gdp_pcap.csv")
 energy = pd.read_csv('energy_per_person.csv')
 
-# STREAMLIT
-with st.sidebar:
-    selected = option_menu(
-      menu_title = "Main Menu",
-      options = ["Global Emissions","Top 10 Countries","Tile Plot","Facet Plot","Scatterplots"],
-      menu_icon = "cast",
-      default_index = 0
-    )
-
 # DATA WRANGLING
 
 # 1. CO2
@@ -630,9 +621,60 @@ plt.grid(True, linestyle='-', linewidth=0.5, color='#696969', alpha=0.3)
 
 plt.show()
 
+# STREAMLIT
+with st.sidebar:
+    selected = option_menu(
+      menu_title = "Main Menu",
+      options = ["Line Plots","Tile Plots","Facet Plots","Scatterplots"],
+      menu_icon = "cast",
+      default_index = 0
+    )
+
+if selected == "Line Plots":
+    st.header('Line Plots')
+    # Create a row layout
+    c1, c2= st.columns(2)
+    c3, c4= st.columns(2)
+
+    with st.container():
+        c1.write("c1")
+        c2.write("c2")
+
+    with st.container():
+        c3.write("c3")
+        c4.write("c4")
+
+    with c1:
+        chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+        st.area_chart(chart_data)
+           
+    with c2:
+        chart_data = pd.DataFrame(np.random.randn(20, 3),columns=["a", "b", "c"])
+        st.bar_chart(chart_data)
+
+    with c3:
+        chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+        st.line_chart(chart_data)
+
+    with c4:
+        chart_data = pd.DataFrame(np.random.randn(20, 3),columns=['a', 'b', 'c'])
+        st.line_chart(chart_data)
+        
+    
+if selected == "Top 10 Countries":
 
 
+if selected == "Tile Plot":
 
+    
+if selected == "Facet Plot":
+
+    
+if selected == "Scatterplots":
+
+
+if selected == "Contact":
+    st.subheader(f"**You Have selected {selected}**")
 
 
 
