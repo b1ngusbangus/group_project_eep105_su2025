@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 
 with st.sidebar:
     selected = option_menu(
-      menu_title = "Main Menu",
+      menu_title = "Vietnam CO2 Emissions",
       options = ["Line Plots","Tile Plots","Facet Plots","Scatterplots"],
       menu_icon = "cast",
       default_index = 0
