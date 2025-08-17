@@ -30,7 +30,7 @@ if selected == "Tile Plots":
     with tp:
         image_url3 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Top10_CO2_tile.png"
         st.image(image_url3, caption="Top 10 CO₂ Emission-producing Countries\nOrdered by Emissions Produced in 2014")
-        st.caption("We see that Germany had very low emission rates at the end of World War II. We also see that the US has consistently had high emission rates since 1900, but the emission rates in China recently surpassed that of the US. The portions of the plot that are white indicate that there is no emission data for that country.")
+        st.caption("We see that Germany had very low emission rates at the end of World War II. We also see that the US has consistently had high emission rates since 1900, but the emission rates in China recently surpassed that of the US. South Korea is notable for having very low CO2 emissions up until the end of WWII. South Korea has gone from rubble to incredible prosperity since the Korean War and we can see this in the years where environmental concerns weren't a big thing in the world yet.")
 
 if selected == "Facet Plots":
     st.header('Facet Plots')
