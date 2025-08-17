@@ -44,12 +44,12 @@ if selected == "Scatterplots":
         sc2.write("Vietnam CO2 Emissions and Temperature, Unscaled (1980-2014)")
         sc3.write("Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
     with sc1:
-        image_url = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/CO2_temp_Vietnam_facet.png"
-        st.image(image_url, caption="Vietnam CO2 Emissions and Temperature, separated")
+        image_url5 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/CO2_temp_Vietnam_facet.png"
+        st.image(image_url5, caption="Vietnam CO2 Emissions and Temperature, separated")
     with sc2:
-        image_url = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/lin_reg_unscaled.png"
-        st.image(image_url, caption="Vietnam CO2 Emissions and Temperature, Unscaled (1980-2014)")
+        image_url6 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/lin_reg_unscaled.png"
+        st.image(image_url6, caption="Vietnam CO2 Emissions and Temperature, Unscaled (1980-2014)")
     with sc3:
-        image_url = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Vietnam_emissions_temp_scaled.png"
-        st.image(image_url, caption="Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
+        image_url7 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Vietnam_emissions_temp_scaled.png"
+        st.image(image_url7, caption="Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
 
