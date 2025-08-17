@@ -21,6 +21,7 @@ if selected == "Line Plots":
         image_url2 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Top10_CO2_lineplot.png"
         st.image(image_url2, caption="Top 10 Emissions-producing Countries in 2010 (1900–2014)")
 if selected == "Tile Plots":
+    st.header('Tile Plots')
     tp = st.columns(1)[0]
     with st.container():
         tp.write("Top 10 CO₂ Emission-producing Countries\nOrdered by Emissions Produced in 2014")
@@ -29,6 +30,7 @@ if selected == "Tile Plots":
         st.image(image_url3, caption="Top 10 CO₂ Emission-producing Countries\nOrdered by Emissions Produced in 2014")
         
 if selected == "Facet Plots":
+    st.header('Facet Plots')
     fp = st.columns(1)[0]
     with st.container():
         fp.write("Distribution of Indications by Year and Value")
@@ -37,6 +39,7 @@ if selected == "Facet Plots":
         st.image(image_url4, caption="Distribution of Indications by Year and Value")
         
 if selected == "Scatterplots":
+    st.header('Scatterplots')
     sc1, sc2 = st.columns(2)
     sc3 = st.columns(1)[0]
     with st.container():
