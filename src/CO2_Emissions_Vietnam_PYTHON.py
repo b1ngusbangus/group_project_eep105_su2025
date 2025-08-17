@@ -21,6 +21,7 @@ if selected == "Line Plots":
     with lp2:
         image_url2 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Top10_CO2_lineplot.png"
         st.image(image_url2, caption="Top 10 Emissions-producing Countries in 2010 (1900–2014)")
+        st.caption("It is important to note that the traditional industrial nations like Germany, the UK, and Russia show earlier growth patterns, with peaks occurring mid-century before stabilizing or declining. The graph illustrates the global shift in emissions from traditional Western industrial powers to emerging Asian economies, particularly China and India.")
 if selected == "Tile Plots":
     st.header('Tile Plots')
     tp = st.columns(1)[0]
@@ -29,7 +30,8 @@ if selected == "Tile Plots":
     with tp:
         image_url3 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Top10_CO2_tile.png"
         st.image(image_url3, caption="Top 10 CO₂ Emission-producing Countries\nOrdered by Emissions Produced in 2014")
-        
+        st.caption("ADD DESCRIPTION")
+
 if selected == "Facet Plots":
     st.header('Facet Plots')
     fp = st.columns(1)[0]
