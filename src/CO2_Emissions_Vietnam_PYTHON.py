@@ -40,6 +40,7 @@ if selected == "Facet Plots":
     with fp:
         image_url4 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Agg_facet_plot.png"
         st.image(image_url4, caption="Distribution of Indications by Year and Value")
+        st.caption("ADD DESCRIPTION")
         
 if selected == "Scatterplots":
     st.header('Scatterplots')
@@ -52,10 +53,13 @@ if selected == "Scatterplots":
     with sc1:
         image_url5 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/CO2_temp_Vietnam_facet.png"
         st.image(image_url5, caption="Vietnam CO2 Emissions and Temperature, separated")
+        st.caption("ADD DESCRIPTION")
     with sc2:
         image_url6 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/lin_reg_unscaled.png"
         st.image(image_url6, caption="Vietnam CO2 Emissions and Temperature, Unscaled (1980-2014)")
+        st.caption("ADD DESCRIPTION")
     with sc3:
         image_url7 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Vietnam_emissions_temp_scaled.png"
         st.image(image_url7, caption="Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
+        st.caption("ADD DESCRIPTION")
 
