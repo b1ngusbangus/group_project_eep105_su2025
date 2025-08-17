@@ -40,7 +40,7 @@ if selected == "Facet Plots":
     with fp:
         image_url4 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Agg_facet_plot.png"
         st.image(image_url4, caption="Distribution of Indications by Year and Value")
-        st.caption("ADD DESCRIPTION")
+        st.caption("As seen in this facet plot, the GDP file does not have that large of an increase in GDP compared to other countries. This could be because Vietnam is a developing country. For Emissions, Vietnam does contribute quite a lot to emissions. This could be as a result to growing production for development. For Energy, Its exponential growth pattern mirrors the CO2 emissions data, remaining minimal until 1850, then showing steady growth through 1950, followed by dramatic acceleration in recent decades.")
         
 if selected == "Scatterplots":
     st.header('Scatterplots')
