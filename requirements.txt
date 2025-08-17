@@ -1,0 +1,6 @@
+streamlit-option-menu
+streamlit
+pandas
+matplotlib==3.8.0
+seaborn==0.13.2
+numpy==1.26.4
