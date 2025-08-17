@@ -57,7 +57,7 @@ if selected == "Scatterplots":
     with sc2:
         image_url6 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/lin_reg_unscaled.png"
         st.image(image_url6, caption="Vietnam CO2 Emissions and Temperature, Unscaled (1980-2014)")
-        st.caption("ADD DESCRIPTION")
+        st.caption("We see a positive correlation between CO2 emissions and temperature in Vietnam. This confirms the fact that CO2 emissions are contributing to temperature warming which can be traced back to how Vietnam is becoming more of a developed country keen on slowly making its way to the global superpowers. Because of this, it doesn't take into account the negative environmental effects it's causing.")
     with sc3:
         image_url7 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Vietnam_emissions_temp_scaled.png"
         st.image(image_url7, caption="Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
