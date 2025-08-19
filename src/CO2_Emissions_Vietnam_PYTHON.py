@@ -53,7 +53,7 @@ if selected == "Scatterplots":
     with sc1:
         image_url5 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/CO2_temp_Vietnam_facet.png"
         st.image(image_url5, caption="Vietnam CO2 Emissions and Temperature, separated")
-        st.caption("We notice that temperature has fluctuated in Vietam but generally increased over the years as its CO2 emissions have risen exponentially several decades following the Vietnam War. This demonstrates how Vietnam is becoming more of a developed country, producing lots of goods but also are not worried about environmental issues since they're primarily focused on developing the country, whatever it takes to achieve that.")
+        st.caption("We notice that temperature has fluctuated in Vietnam but generally increased over the years as its CO2 emissions have risen exponentially several decades following the Vietnam War. This demonstrates how Vietnam is becoming more of a developed country, producing lots of goods but also are not worried about environmental issues since they're primarily focused on developing the country, whatever it takes to achieve that.")
     with sc2:
         image_url6 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/lin_reg_unscaled.png"
         st.image(image_url6, caption="Vietnam CO2 Emissions and Temperature, Unscaled (1980-2014)")
@@ -61,5 +61,5 @@ if selected == "Scatterplots":
     with sc3:
         image_url7 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Vietnam_emissions_temp_scaled.png"
         st.image(image_url7, caption="Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
-        st.caption("In the plot above, we use the scale of the original variables (CO2 emission and temperature), this allows the regression line to have an intercept of 0. We notice that there is an upward slope, showing increased emissions. It is also important to note that there are some notable outliers.")
+        st.caption("We see here that the datapoints are scattered but still shows a generally positive direction. Our t-value that we calculated is 2.73, meaning statistical significance at the 5% level. Therefore, we are able to reject the null hypothesis that temperature and CO2 emissions aren't correlated, which makes sense since CO2 emissions have largely shown to contribute to rising temperatures. Given that Vietnam is becoming more developed and is producing more CO2 emissions, we would expect to see it's average temperatures rising in the coming years.")
 
