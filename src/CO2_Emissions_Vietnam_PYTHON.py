@@ -47,14 +47,12 @@ if selected == "Scatterplots":
     sc1, sc2 = st.columns(2)
     sc3 = st.columns(1)[0]
     sc4, sc5 = st.columns(2)
-    sc6 = st.columns(1)[0]
     with st.container():
         sc1.write("Vietnam CO2 Emissions and Temperature, separated")
         sc2.write("Vietnam CO2 Emissions and Temperature, Unscaled (1980-2014)")
         sc3.write("Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
         sc4.write("(Individual finding) US CO2 Emissions and Temperature, separated")
-        sc5.write("US CO2 Emissions and Temperature, Unscaled (1980-2014)")
-        sc6.write("US CO2 Emissions and Temperature, Scaled (1980–2014)")
+        sc5.write("(Individual finding) US CO2 Emissions and Temperature, Scaled (1980-2014)")
     with sc1:
         image_url5 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/CO2_temp_Vietnam_facet.png"
         st.image(image_url5, caption="Vietnam CO2 Emissions and Temperature, separated")
@@ -68,5 +66,10 @@ if selected == "Scatterplots":
         st.image(image_url7, caption="Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
         st.caption("We see here that the datapoints are scattered but still shows a generally positive direction. Our t-value that we calculated is 2.73, meaning statistical significance at the 5% level. Therefore, we are able to reject the null hypothesis that temperature and CO2 emissions aren't correlated, which makes sense since CO2 emissions have largely shown to contribute to rising temperatures. Given that Vietnam is becoming more developed and is producing more CO2 emissions, we would expect to see its average temperatures rising in the coming years.")
     with sc4: 
-        // ADD PNGS HERE
-
+        image_url8 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/CO2_temp_US_facet.png.png"
+        st.image(image_url6, caption="(Individual finding) US CO2 Emissions and Temperature, separated")
+        st.caption("We see that the CO2 emissions in the US from the 1980s up until the early 2000s (2005 to be precise). This subsequent dip can be attributed to the fact that the US has taken measures to regulate CO2 emissions after raising environmental awareness about CO2 emissions resulting from factories, vehicle emissions, etc. We see the temperature fluctuate a lot as well but we do see it generally decreasing after the 2000s, which shows how CO2 emission regulations has helped decrease average temperatures in the US over time.")
+    with sc5:
+        image_url9 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/US_emissions_temp_scaled.png"
+        st.image(image_url7, caption="(Individual finding) Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
+        st.caption("We see here that the datapoints are scattered but still shows a generally positive direction. We can see a possible statistical significance here, which makes sense given that CO2 emissions indeed contribute to rising temperatures in the US just like anywhere else in the globe.")
