@@ -46,10 +46,15 @@ if selected == "Scatterplots":
     st.header('Scatterplots')
     sc1, sc2 = st.columns(2)
     sc3 = st.columns(1)[0]
+    sc4, sc5 = st.columns(2)
+    sc6 = st.columns(1)[0]
     with st.container():
         sc1.write("Vietnam CO2 Emissions and Temperature, separated")
         sc2.write("Vietnam CO2 Emissions and Temperature, Unscaled (1980-2014)")
         sc3.write("Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
+        sc4.write("(Individual finding) US CO2 Emissions and Temperature, separated")
+        sc5.write("US CO2 Emissions and Temperature, Unscaled (1980-2014)")
+        sc6.write("US CO2 Emissions and Temperature, Scaled (1980–2014)")
     with sc1:
         image_url5 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/CO2_temp_Vietnam_facet.png"
         st.image(image_url5, caption="Vietnam CO2 Emissions and Temperature, separated")
@@ -62,4 +67,6 @@ if selected == "Scatterplots":
         image_url7 = "https://raw.githubusercontent.com/b1ngusbangus/group_project_eep105_su2025/main/png/Vietnam_emissions_temp_scaled.png"
         st.image(image_url7, caption="Vietnam CO2 Emissions and Temperature, Scaled (1980–2014)")
         st.caption("We see here that the datapoints are scattered but still shows a generally positive direction. Our t-value that we calculated is 2.73, meaning statistical significance at the 5% level. Therefore, we are able to reject the null hypothesis that temperature and CO2 emissions aren't correlated, which makes sense since CO2 emissions have largely shown to contribute to rising temperatures. Given that Vietnam is becoming more developed and is producing more CO2 emissions, we would expect to see its average temperatures rising in the coming years.")
+    with sc4: 
+        // ADD PNGS HERE
 
